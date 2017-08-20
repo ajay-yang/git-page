@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					
+				</div>
+				<div class='col-sm-8'>
+					<h2 class="page-header">按钮折叠</h2>
+					
+					<button class="btn btn-success" data-toggle="collapse" data-target="#myData">
+						折叠标题
+					</button>
+					<div id="myData" class="collapse in">
+						折叠内容
+					</div>
+<!--————————————————————————————————————————————————————————————————————————————————————————————-->
+					<h2 class="page-header">列表折叠</h2>
+					
+					<div class="panel-group" id="accordion">
+					    <div class="panel panel-default">
+					        <div class="panel-heading">
+				                <a data-toggle="collapse" data-parent="#accordion"  href="#one">
+				               		第 1 部分
+				                </a>
+					        </div>
+					        
+					        <div id="one" class="panel-collapse collapse in">
+					            <div class="panel-body panel-collapse collapse in">
+					               	我是第一部分的内容
+					            </div>  
+					        </div>
+					    </div> 
+					    
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src='js/jquery.min.js'></script>
+		<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	</body>
+</html>

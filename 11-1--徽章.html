@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+			#s1{
+				visibility:hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					
+				</div>
+				<div class='col-sm-8'>
+					<h2 class="page-header">
+						徽章 <small>按钮徽章</small>
+					</h2>
+					<button class='btn btn-info' >
+						 首页
+						 <span class="badge" style='background: red;color:#ffffff' >10</span>
+					</button>
+
+					<h2 class="page-header">
+						徽章 <small>列表徽章</small>
+					</h2>
+
+					<ul class="nav nav-pills">
+						<li>
+					        <a href="#">
+					        	消息
+					            <span class="badge" id='s1' style='background: red;color:#ffffff'>20</span>
+					        </a>
+					    </li>
+					</ul>
+					<br>
+					<button class='btn btn-warning' onclick='show()'>主人，来消息啦</button>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			flag=0;
+			function show(){
+				var s1 = document.getElementById('s1');
+				if(flag==0){
+					s1.style.visibility='visible';
+					flag=1;
+				}else{
+					s1.style.visibility='hidden';
+					flag=0;
+				}
+			}
+		</script>
+		<script type="text/javascript" src='js/jquery.min.js'></script>
+		<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	</body>
+</html>

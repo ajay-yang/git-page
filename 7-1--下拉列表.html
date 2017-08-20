@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="page-header">按钮下拉</h2>
+			<!--按钮下拉菜单-->
+			<div class='dropdown'>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			 			电影 <span class="caret"></span>
+		    	</button>
+			    <ul class="dropdown-menu" role="menu">
+			        <li>
+			            <a href="#">战狼2</a>
+			        </li>
+			        <li>
+			            <a href="#">煎饼侠</a>
+			        </li>
+			        <li>
+			            <a href="#">三生三世</a>
+			        </li>
+			    </ul>
+			</div>
+
+			<br />
+			<hr />
+			<div class="btn-group">
+	            <button class="btn btn-danger">电影资源</button>
+	            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+	                <span class="caret"></span>
+	            </button>
+	            <ul class="dropdown-menu dropdown-menu-right">
+	                <li><a href="#"></a></li>
+	                <li><a href="#">战狼2</a></li>
+	                <li><a href="#">三生三世</a></li>
+	                <li class="divider"></li>
+	                <li><a href="#">情圣</a></li>
+	            </ul>
+	        </div>
+			<hr />
+			<div class='dropup'>
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			 			电影  <span class="caret"></span>
+		    	</button>
+			    <ul class="dropdown-menu" role="menu">
+			        <li>
+			            <a href="#">战狼2</a>
+			        </li>
+			        <li>
+			            <a href="#">煎饼侠</a>
+			        </li>
+			        <li>
+			            <a href="#">三生三世</a>
+			        </li>
+			    </ul>
+			</div>
+			<br />
+			<br />
+			<!--列表下拉菜单-->
+			<h2 class="page-header">列表下拉</h2>
+			<ul class="nav">
+                <li class="dropdown">
+                	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                		电影
+                		<span class="caret"></span>
+                	</a>
+	                <ul class="dropdown-menu">
+	                	<li><a href="#">战狼2</a></li>
+	                    <li><a href="#">煎饼侠</a></li>
+	                </ul>
+                </li>
+           </ul>
+           <hr />
+           <ul class="nav">
+                <li class="dropup">
+                	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                		电影
+                		<span class="caret"></span>
+                	</a>
+	                <ul class="dropdown-menu">
+	                	<li><a href="#">战狼2</a></li>
+	                    <li><a href="#">煎饼侠</a></li>
+	                </ul>
+                </li>
+           </ul>
+		</div>
+		<script type="text/javascript" src='js/jquery.min.js'></script>
+		<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	</body>
+</html>
